@@ -1,125 +1,72 @@
 *{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titlePage h1{
+    font-size: 7rem;
+}
+
+.titlePage h2 {
+    font-size: 3rem;
 }
 
 .principalPage, .about_us, #nuestros-trabajos, .navbar{
     height: 100vh;
 }
-.principalPage {
-    background-color: #042056;
+
+@media (max-width: 576px){
+    .titlePage h1 {
+        font-size: 5rem;
+    }
+
+    .titlePage h2 {
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    
+    .about_us, #nuestros-trabajos, .navbar{
+        height: auto;
+    }
+    
+    .personTitle{
+        margin-top: 10px;
+    }
+    
+}
+
+.colorLetter {
     color: #fff;
 }
 
-.navbar img{
+ .principalPage {
+     background-color: #042056;
+ }
+
+ .navbar img{
     width: 50px;
 }
 
 .navbar {
     background-color: black;
-    opacity: .6; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20%;
-    float: right;
+    opacity: .6;
 }
 
-.navbar ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 40%;
-    justify-content: space-around;
-    align-items: center;
+.navbar-aside {
+    margin: 0;
+    padding: 0;
 }
 
-.list li {
-    margin: 0 15px;
-    color: white;
-    opacity: 1;
-}
-
-.list li a {
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-}
-
-.titlePage {
-    margin: 10% 10%;
-    margin-top: 0;
-    padding-top: 10%;
-    opacity: .8;
-}
-
-.titlePage h2{
-    font-size: 2.5rem;
-}
-
-.titlePage h1 {
-    font-size: 9rem;
+.section-height {
+    height: 250px;
+    border: 1px solid blue;
 }
 
 .about_us {
-    background-color: #fff;
-    color: #254583;
-}
-
-.about_us .title {
-    height: 25%;
-}
-.title{
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.title h2 {
-    font-size: 2rem;
-}
-
-.team {
-    border: 1px solid green;
-    height: 75%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.person {
-    border: 1px solid #000;
-    width: 50%;
-    margin: 15px;
-    height: 35%;
-    line-height: 20px;
-}
-
-.experience > .title {
-    height: 15%;
-}
-
-.experience {
     background: #ccc;
-}
-
-.description {
-    width: 95%;
-    height: 40%;
-    border: 1px solid red;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.description p {
-    width: 75%;
-    line-height: 25px;
-    align-self: center;
-    text-align: justify;
-}
+};
