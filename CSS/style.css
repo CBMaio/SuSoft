@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+.navbar {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: black;
+    opacity: .7;
+}
+
+.listStyle{
+    height: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .titlePage h1{
     font-size: 7rem;
 }
@@ -12,9 +27,14 @@
     font-size: 3rem;
 }
 
-.principalPage, .about_us, #nuestros-trabajos, .navbar{
+.principalPage,  .navbar{
     height: 100vh;
 }
+
+.about_us,  #nuestros-trabajos {
+    height: 90vh;
+}
+
 
 @media (max-width: 576px){
     .titlePage h1 {
@@ -30,18 +50,40 @@
         margin-top: 20px;
     }
     
-    .about_us, #nuestros-trabajos, .navbar{
+    .about_us, #nuestros-trabajos {
         height: auto;
     }
     
     .personTitle{
         margin-top: 10px;
     }
-    
+
+    .responsiveMoodNone{
+        display: none;
+    }
+
+    .navbar {
+        height: auto;
+        background: transparent!important;
+    }
 }
 
-.colorLetter {
-    color: #fff;
+.btn-style-border {
+    border-width: 1.5px;
+    border-radius: 5px;
+}
+
+.listStyle > li, .listStyle > li > a {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.listStyle > li > a:hover {
+    transform: scale(1.1);
+}
+
+textarea {
+    resize: none;
 }
 
  .principalPage {
@@ -50,16 +92,6 @@
 
  .navbar img{
     width: 50px;
-}
-
-.navbar {
-    background-color: black;
-    opacity: .6;
-}
-
-.navbar-aside {
-    margin: 0;
-    padding: 0;
 }
 
 .section-height {

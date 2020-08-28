@@ -7,38 +7,40 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
     <link rel="stylesheet" href="CSS/style.css">
-    <!-- <link href="CSS/pruebabootstrap.css" rel="stylesheet" /> -->
     <title>SuSoft</title>
 </head>
 <body>
     <!--PANTALLA PRINCIPAL-->
-    <section class="principalPage colorLetter container-fluid">
+    <section class="principalPage text-white container-fluid">
         <div class="row"> 
+            <nav class="navbar navbar-expand-md navbar-dark d-flex flex-column justify-content-start">
+                <a class="navbar-brand text-white font-weight-bold m-0 responsiveMoodNone" href="#">Welcome</a>
+                <button class="navbar-toggler" 
+                        type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse align-items-start" id="navbarNav">
+                  <ul class="navbar-nav flex-column listStyle">
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#nosotros">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#nuestros-trabajos">Nuestros trabajos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Nuestra empresa</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="#contacto">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
             <div class="col-md-9 justify-content-sm-center align-items-center mt-5 mt-sm-0">
                 <header class="titlePage p-md-5 pt-sm-2 pt-5">
                     <h1 class="m-5">SuSoft</h1>
                     <h2 class="m-5">Software Developers</h2>
                 </header>
-            </div>
-            <div class="col-3 navbar-aside">
-                <nav class="navbar d-flex flex-column justify-content-start">
-                    <!--IMG LOGO-->
-                    <a href="index.html" class="navbar-brand">
-                        <img src="IMG/logocasa.png" alt="Logo de empresa"/>
-                    </a>
-                    <ul class="list navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#nosotros">¿Quienes somos?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#nuestros-trabajos">Nuestros trabajos</a>
-                        </li>
-                        <li class="nav-item">Nuestra empresa</li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
         </div>
     </section>
@@ -64,7 +66,7 @@
         </div>
     </div>
         <!--DIV DE QUIENES SOMOS-->
-        <div id="nosotros" class="about_us container-fluid">
+        <div id="nosotros" class="about_us container-fluid d-flex align-items-center">
             <div class="container">
                 <div class="row">
                     <section class="col-12 p-3 title mb-md-4">
@@ -132,7 +134,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-5 col-sm-12 mt-4">
-                <button class="btn-outline-primary btn-block"type="submit">Enviar</button>
+                <button class="btn btn-outline-primary btn-block btn-style-border"type="submit">Enviar</button>
             </div>
         </div>
         </form>
@@ -141,10 +143,10 @@
     <footer class="container-fluid mt-5 bg-dark p-md-4">
         <div id="contacto" class="row">
             <div class="col-md-8 col-sm-12">
-                <h3 class="colorLetter text-center">¡Estemos en contacto, visita nuestras redes!</h3>
+                <h3 class="text-white text-center">¡Estemos en contacto, visita nuestras redes!</h3>
             </div>
             <div class="col-md-2 col-sm-12">
-                <ul class="colorLetter list-inline d-flex justify-content-around">
+                <ul class="text-white list-inline d-flex justify-content-around">
                     <li><i class="fab fa-instagram fa-1.8x"></i></li>
                     <li><i class="far fa-envelope fa-1.8x"></i></li>
                     <li><i class="fab fa-linkedin-in fa-1.8x"></i></li>
@@ -153,5 +155,7 @@
             </div>
         </div>
     </footer>
+
+
 </body>
 </html>
