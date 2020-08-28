@@ -32,9 +32,42 @@
 }
 
 .about_us,  #nuestros-trabajos {
-    height: 90vh;
+    height: 100vh;
 }
 
+.btn-style-border {
+    border-width: 1.5px;
+    border-radius: 5px;
+}
+
+.listStyle > li, .listStyle > li > a {
+    padding: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.listStyle > li > a:hover {
+    transform: scale(1.1);
+}
+
+textarea {
+    resize: none;
+}
+
+ .principalPage {
+     background-color: #042056;
+ }
+
+ .navbar img{
+    width: 50px;
+}
+
+.section-height {
+    height: 60vh;
+    border: 1px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 @media (max-width: 576px){
     .titlePage h1 {
@@ -66,37 +99,17 @@
         height: auto;
         background: transparent!important;
     }
+
+    .section-height {
+        height: 30vh;
+    }
+
+    .section-height img {
+        display: none;
+    }
 }
-
-.btn-style-border {
-    border-width: 1.5px;
-    border-radius: 5px;
-}
-
-.listStyle > li, .listStyle > li > a {
-    padding: 10px;
-    transition: all .2s ease-in-out;
-}
-
-.listStyle > li > a:hover {
-    transform: scale(1.1);
-}
-
-textarea {
-    resize: none;
-}
-
- .principalPage {
-     background-color: #042056;
- }
-
- .navbar img{
-    width: 50px;
-}
-
-.section-height {
-    height: 250px;
-    border: 1px solid blue;
+.section-height img {
+    height: 147px;
 }
 
 .about_us {
