@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/8efa9a95e8.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
     <title>SuSoft</title>
 </head>
@@ -14,7 +13,7 @@
     <section class="principalPage text-white container-fluid">
         <div class="row"> 
             <nav class="navbar navbar-expand-md navbar-dark d-flex flex-column justify-content-start">
-                <a class="navbar-brand text-white font-weight-bold m-0 responsiveMoodNone" href="#">Welcome</a>
+                <a class="navbar-brand text-white font-weight-bold m-0 responsiveMoodNone" href="#">Bienvenido</a>
                 <button class="navbar-toggler" 
                         type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -38,7 +37,7 @@
               </nav>
             <div class="col-md-9 justify-content-sm-center align-items-center mt-5 mt-sm-0">
                 <header class="titlePage p-md-5 pt-sm-2 pt-5">
-                    <h1 class="m-5">SuSoft</h1>
+                    <h1 class="m-md-5 m-3">S</h1>
                     <h2 class="m-5">Software Development</h2>
                 </header>
             </div>
@@ -73,7 +72,7 @@
     </div>
 
     <!--DIV CON TRABAJOS/CLIENTES-->
-    <div id="nuestros-trabajos" class="container-fluid bg-light experience">
+    <div id="nuestros-trabajos" class="container-fluid experience">
         <div class="row">
             <section class="col-12 title p-md-4 p-sm-2">
                 <h2 class="text-center">Estas son algunas de las empresas que decidieron confiar en nosotros</h2>
@@ -96,13 +95,13 @@
     </div>
     
     <!--DIV DE CONTACTO-->
-    <div class="container" id="form-contacto">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-center p-3">¡Queremos escucharte!</h1>
+    <div class="container-fluid colorText pb-5" id="form-contacto">
+        <div class="row container m-auto">
+            <div class="col-12 pt-4">
+                <h2 class="text-center p-3">¡Queremos escucharte!</h2>
             </div>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-md-5 col-sm-12">
                 <form method="POST" action="#">
                     <div class="form-group">
@@ -137,13 +136,13 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-5 col-sm-12 mt-4">
-                <button class="btn btn-outline-primary btn-block btn-style-border"type="submit">Enviar</button>
+                <button class="btn btn-dark btn-block btn-style-border"type="submit">Enviar</button>
             </div>
         </div>
         </form>
     </div>
 
-    <footer class="container-fluid mt-5 bg-dark p-md-4">
+    <footer class="container-fluid footerBg p-md-4">
         <div id="contacto" class="row">
             <div class="col-md-8 col-sm-12">
                 <h3 class="text-white text-center">¡Estemos en contacto, visita nuestras redes!</h3>
@@ -159,6 +158,6 @@
         </div>
     </footer>
 
-
+<script src="JS/app.js"></script>
 </body>
 </html>
