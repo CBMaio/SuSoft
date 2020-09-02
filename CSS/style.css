@@ -1,147 +1,196 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.responsiveMoodNone{
-    text-transform: uppercase;
+.responsiveMoodNone {
+  text-transform: uppercase;
 }
 
 .navbar {
-    float: right;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: black;
-    border-left: 3px solid #bec6dc;
-    opacity: .7;
-    transition: all .2s ease-in;
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: black;
+  border-left: 3px solid #bec6dc;
+  opacity: 0.7;
+  transition: all 0.2s ease-in;
 }
 
-.navbar:hover{
-    border-left: 3px solid #6b7dab;
+.navbar:hover {
+  border-left: 3px solid #6b7dab;
 }
 
-.listStyle{
-    height: 40%;
-    justify-content: space-around;
-    align-items: center;
+.listStyle {
+  height: 40%;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.titlePage h1{
-    font-size: 7rem;
+.titlePage h1 {
+  font-size: 7rem;
 }
 
 .titlePage h2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
-.principalPage,  .navbar{
-    height: 100vh;
+.principalPage,
+.navbar {
+  height: 100vh;
 }
 
-.about_us,  #nuestros-trabajos {
-    height: 100vh;
+.about_us,
+#nuestros-trabajos {
+  height: 100vh;
 }
 
 .btn-style-border {
-    border-width: 1.5px;
-    border-radius: 5px;
-    border-color: #563b04;
-    background: #563b04;
-    transition: .2s ease-out;
+  border-width: 1.5px;
+  border-radius: 5px;
+  border-color: #563b04;
+  background: #563b04;
+  transition: 0.2s ease-out;
 }
 
-.btn-style-border:hover{
-    border-color: #563b04;
-    background: #6e5113;
+.btn-style-border:hover {
+  border-color: #563b04;
+  background: #6e5113;
 }
 
-.listStyle > li, .listStyle > li > a {
-    padding: 10px;
-    transition: all .2s ease-in-out;
+.listStyle > li,
+.listStyle > li > a {
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
 }
 
 .listStyle > li > a:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
- .principalPage {
-     background-color: #042056;
-    /* background-color: #1A237E; */
- }
+.principalPage {
+  background-color: #042056;
+}
 
- .colorText{
-    background-color: white;
-    color: #563b04
- }
+.principalPage:hover{
+    animation-name: backgroundColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
 
- .navbar img{
-    width: 50px;
+@keyframes backgroundColor {
+    0% {
+        background-color: #042056;
+    }
+
+    35% {
+        background-color: #031b49;
+    }
+
+    50% {
+        background-color: #021435;
+    }
+
+    65% {
+        background-color: #031b49;
+    }
+    
+    100% {
+        background-color: #042056;
+    }
+}
+
+
+
+.colorText {
+  background-color: white;
+  color: #563b04;
+}
+
+.navbar img {
+  width: 50px;
 }
 
 .section-height {
-    height: 60vh;
-    border: 1px dashed #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  height: 60vh;
+  border: 1px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .section-height img {
-    height: 147px;
+  height: 147px;
 }
 
-@media (max-width: 576px){
-    .titlePage h1 {
-        font-size: 5rem;
-    }
-
-    .titlePage h2 {
-        font-size: 2rem;
-    }
-
-    h2{
-        font-size: 25px;
-        margin-top: 20px;
-    }
-    
-    .about_us, #nuestros-trabajos {
-        height: auto;
-    }
-    
-    .personTitle{
-        margin-top: 10px;
-    }
-
-    .responsiveMoodNone{
-        display: none;
-    }
-
-    .navbar {
-        height: auto;
-        background: transparent!important;
-        border: none;
-    }
-
-    .section-height {
-        height: 30vh;
-    }
-
-    .section-height img {
-        display: none;
-    }
+.border-style {
+    border-top: 1px solid #563b04;
 }
 
-.footerBg{
-    background: #00002d;
+@media (max-width: 576px) {
+  .titlePage h1 {
+    font-size: 5rem;
+  }
+
+  .titlePage h2 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .about_us,
+  #nuestros-trabajos {
+    height: auto;
+  }
+
+  .personTitle {
+    margin-top: 10px;
+  }
+
+  .responsiveMoodNone {
+    display: none;
+  }
+
+  .navbar {
+    height: auto;
+    background: transparent !important;
+    border: none;
+  }
+
+  .section-height {
+    height: 30vh;
+  }
+
+  .section-height img {
+    display: none;
+  }
+}
+
+.footerBg {
+  background: #00002d;
 }
 
 .about_us {
-    background: #E0E0E0;
-};
+  background: #e0e0e0;
+}
+
+.stylesImg {
+    opacity: .8;
+    width: 100%;
+    height: 200px;
+    transition: all .2s linear;
+}
+
+.stylesImg:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
