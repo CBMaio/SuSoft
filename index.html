@@ -10,7 +10,7 @@
 </head>
 <body>
     <!--PANTALLA PRINCIPAL-->
-    <section class="principalPage text-white container-fluid">
+    <section class="principalPage text-white container-fluid" id="top">
         <div class="row"> 
             <nav class="navbar navbar-expand-md navbar-dark d-flex flex-column justify-content-start">
                 <a class="navbar-brand text-white font-weight-bold m-0 responsiveMoodNone" href="#">Bienvenido</a>
@@ -25,9 +25,6 @@
                     </li>
                     <li class="nav-item">
                       <a class="nav-link text-white" href="#nuestros-trabajos">Nuestros trabajos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Nuestra empresa</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link text-white" href="#contacto">Contacto</a>
@@ -56,7 +53,7 @@
                     <div class="col-lg-6 col-md-12">
                         <p class="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus magni aliquam reprehenderit porro quod laudantium dicta, autem nam totam similique dolores numquam nulla non iure velit qui sed maxime quisquam voluptate, voluptatum explicabo! </p>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 text-center">
                         <img src="IMG/img-computer.jpeg" alt="imagen computadora" class="stylesImg"/>
                     </div>
                 </section>
@@ -76,23 +73,41 @@
     <div id="nuestros-trabajos" class="container-fluid experience">
         <div class="row">
             <section class="col-12 title p-md-4 p-sm-2">
-                <h2 class="text-center">Estas son algunas de las empresas que decidieron confiar en nosotros</h2>
+                <h2 class="text-center color-subtitle">Estas son algunas de las empresas que decidieron confiar en nosotros</h2>
             </section>
         </div>
-        <div class="row container m-auto">
-            <section class="section-height col-12">
-                <img src="IMG/adidas.png" alt="Logo Adidas">
-                <img src="IMG/amazon.jpeg" alt="Logo Amazon">
-                <img src="IMG/bimbo_logo.jpg" alt="Logo Bimbo">
-                <img src="IMG/mcDonalds.png" alt="Logo McDonalds">
-                <img src="IMG/mercado-libre.jpeg" alt="Logo Mercado Libre">
-            </section>
-            <!--Información breve de la empresa, como surgió, donde comenzó, etc. --> 
-            <section class="description col-12 mt-md-4 p-0">
-                <h2 class="text-right">¡Gracias!</h2>
-                <!--Imagen maravillosa de la empresa-->
-            </section> 
+        <div class="row container mr-auto ml-auto mt-5">
+            <div id="carouselExampleIndicators" class="carousel slide carouselStyles" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner carouselImgContent">
+                  <div class="carousel-item active">
+                    <img src="IMG/adidas.png" class="d-block m-auto ajusteWidthResponsive" alt="Logo Adidas">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="IMG/amazon.jpeg" class="d-block m-auto ajusteWidthResponsive" alt="LOGO AMAZON">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="IMG/mcDonalds.png" class="d-block m-auto ajusteWidthResponsive" alt="LOGO MC">
+                  </div>
+                </div>
+                <a class="carousel-control-prev btn-dark control" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next btn-dark control" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
         </div>
+        <section class="description col-12 mt-md-4 p-0">
+            <h2 class="text-right pr-md-5 mr-md-5">¡Gracias!</h2>
+
+        </section> 
     </div>
     
     <!--DIV DE CONTACTO-->
@@ -158,10 +173,19 @@
             </div>
         </div>
     </footer>
-            <div class="top-btn">
-                <img src="IMG/up-arrow.svg" alt="Flecha subir">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="top-btn col-md-2 col-xs-12">
+                <a href="#top">
+                    <img src="IMG/up-arrow.svg" alt="Flecha subir">
+                </a>
             </div>
+        </div>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
 <script src="JS/app.js"></script>
 </body>
 </html>
