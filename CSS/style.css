@@ -8,6 +8,30 @@
   text-transform: uppercase;
 }
 
+.buttonbtnShow {
+  position: absolute; 
+  right: 30px; 
+  top: 30px
+}
+
+.navbtnShow {
+  width: 100%;
+  height: 100vh;
+}
+
+.divbtnShow {
+  width: 100%;
+  height: 100vh;
+}
+
+.ulbtnShow{
+  margin-top: 30%;
+}
+
+.sectionbtnShow {
+  display: none;
+} 
+
 .navbar {
   float: right;
   position: absolute;
