@@ -23,17 +23,18 @@ const titleSection = document.querySelector("#titleSection");
 
 function showNavbar(){
     titleSection.classList.add('responsiveMoodNone');
-    for(let i = 0; i < elementsNavbar.length; i++){
-        elementsNavbar[i].classList.remove('responsiveMoodNone')
-    }
+    elementsNavbar.forEach(element => {
+        element.classList.remove('responsiveMoodNone');
+    })
 };
 
 function hideNavbar(){
     titleSection.classList.remove('responsiveMoodNone');
-    for(let i = 0; i < elementsNavbar.length; i++){
-        elementsNavbar[i].classList.add('responsiveMoodNone')
-    }
+    elementsNavbar.forEach(element => {
+        element.classList.add('responsiveMoodNone');
+    });
 };
+
 
 $btnNavbar.onclick= () => {
     titleSection.classList.contains('responsiveMoodNone') ? hideNavbar() : showNavbar()
