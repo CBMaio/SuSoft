@@ -8,29 +8,9 @@
   text-transform: uppercase;
 }
 
-.buttonbtnShow {
-  position: absolute; 
-  right: 30px; 
-  top: 30px
-}
-
-.navbtnShow {
-  width: 100%;
-  height: 100vh;
-}
-
-.divbtnShow {
-  width: 100%;
-  height: 100vh;
-}
-
-.ulbtnShow{
-  margin-top: 30%;
-}
-
-.sectionbtnShow {
+.openBtn {
   display: none;
-} 
+}
 
 .navbar {
   float: right;
@@ -48,7 +28,7 @@
 }
 
 .listStyle {
-  height: 40%;
+  height: 100%;
   justify-content: space-around;
   align-items: center;
 }
@@ -145,8 +125,11 @@ textarea {
   color: #563b04;
 }
 
-.navbar img {
-  width: 50px;
+.navbar i {
+  font-size: 30px;
+  width: 30px;
+  background-color: #042056;
+  color: white;
 }
 
 .section-height {
@@ -244,6 +227,45 @@ html {
 
 
 @media (max-width: 576px) {
+
+  .openBtn {
+    display: flex;
+  }
+
+  .buttonbtnShow {
+    position: absolute; 
+    right: 30px; 
+    top: 30px
+  }
+
+  .listStyle {
+    height: 40%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .listStyle li {
+    font-size: 1.5em;
+  }
+
+  .navbtnShow {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .divbtnShow {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .ulbtnShow{
+    margin-top: 30%;
+  }
+  
+  .sectionbtnShow {
+    display: none;
+  } 
+
   .titlePage h1 {
     font-size: 5rem;
   }

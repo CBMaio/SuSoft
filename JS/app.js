@@ -11,4 +11,31 @@ const writing = str => {
     }, 300);  
 };
 
-writing('uSoft')
+writing('uSoft');
+
+const elementsNavbar = [
+    document.querySelector("#listContent"),
+    document.querySelector("#listNavbar")
+];
+
+const $btnNavbar = document.querySelector('#btnNavbar');
+const titleSection = document.querySelector("#titleSection");
+
+function showNavbar(){
+    titleSection.classList.add('responsiveMoodNone');
+    for(let i = 0; i < elementsNavbar.length; i++){
+        elementsNavbar[i].classList.remove('responsiveMoodNone')
+    }
+};
+
+function hideNavbar(){
+    titleSection.classList.remove('responsiveMoodNone');
+    for(let i = 0; i < elementsNavbar.length; i++){
+        elementsNavbar[i].classList.add('responsiveMoodNone')
+    }
+};
+
+$btnNavbar.onclick= () => {
+    titleSection.classList.contains('responsiveMoodNone') ? hideNavbar() : showNavbar()
+}
+
