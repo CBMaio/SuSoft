@@ -12,6 +12,11 @@
   display: none;
 }
 
+.welcomeTitle {
+  font-size: 1.4em;
+  padding: 15px 0;
+}
+
 .navbar {
   float: right;
   position: absolute;
@@ -296,6 +301,11 @@ html {
     height: auto;
     background: transparent !important;
     border: none;
+    border-left: none;
+  }
+
+  .navbar:hover {
+    border-left: none;
   }
 
   .footerBg {
