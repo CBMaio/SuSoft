@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .responsiveMoodNone {
@@ -36,14 +37,18 @@
   height: 100%;
   justify-content: space-around;
   align-items: center;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .titlePage h1 {
   font-size: 7rem;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .titlePage h2 {
   font-size: 3rem;
+  font-family: 'Roboto Mono', monospace;
+  font-style: italic;
 }
 
 .principalPage,
@@ -240,7 +245,8 @@ html {
   .buttonbtnShow {
     position: absolute; 
     right: 30px; 
-    top: 30px
+    top: 30px;
+    background: transparent;
   }
 
   .listStyle {
@@ -273,10 +279,12 @@ html {
 
   .titlePage h1 {
     font-size: 5rem;
+    font-family: 'Roboto Slab', serif;
   }
 
   .titlePage h2 {
     font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
   }
   
   h2 {
@@ -299,7 +307,6 @@ html {
   
   .navbar {
     height: auto;
-    background: transparent !important;
     border: none;
     border-left: none;
   }
