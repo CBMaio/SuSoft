@@ -235,6 +235,9 @@ html {
   color: #042056;
 }
 
+.letterSpacing b {
+  letter-spacing: .8px;
+}
 
 @media (max-width: 576px) {
 
@@ -247,6 +250,11 @@ html {
     right: 30px; 
     top: 30px;
     background: transparent;
+    border: none;
+  }
+
+  .buttonbtnShow img {
+    width: 20px;
   }
 
   .listStyle {

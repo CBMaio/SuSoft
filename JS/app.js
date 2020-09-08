@@ -15,14 +15,17 @@ writing('uSoft');
 
 const elementsNavbar = [
     document.querySelector("#listContent"),
-    document.querySelector("#listNavbar")
+    document.querySelector("#listNavbar"),
+    document.querySelector('#closeMenu')
 ];
 
 const $btnNavbar = document.querySelector('#btnNavbar');
 const titleSection = document.querySelector("#titleSection");
+const $open = document.querySelector('#openMenu');
 
 function showNavbar(){
     titleSection.classList.add('responsiveMoodNone');
+    $open.classList.add('responsiveMoodNone');
     elementsNavbar.forEach(element => {
         element.classList.remove('responsiveMoodNone');
     })
@@ -30,6 +33,7 @@ function showNavbar(){
 
 function hideNavbar(){
     titleSection.classList.remove('responsiveMoodNone');
+    $open.classList.remove('responsiveMoodNone')
     elementsNavbar.forEach(element => {
         element.classList.add('responsiveMoodNone');
     });

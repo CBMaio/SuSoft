@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="https://kit.fontawesome.com/8efa9a95e8.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,100;1,200;1,400&family=Roboto:ital,wght@0,300;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/8efa9a95e8.js" crossorigin="anonymous"></script>
     <title>SuSoft</title>
 </head>
 <body>
@@ -19,7 +16,8 @@
               <nav class="navbar navbar-expand-md navbar-dark d-flex flex-column justify-content-start navbtnShow">
                 <a class="text-white font-weight-bold m-0 responsiveMoodNone welcomeTitle" href="#">Bienvenido</a>
                 <button id="btnNavbar" type="button" class="buttonbtnShow openBtn">
-                  <i class="fas fa-bars"></i>
+                  <img src="IMG/open-menu.png" alt="Icono abrir menú" id="openMenu">
+                  <img src="IMG/close.png" alt="Icono cerrar menú" id="closeMenu" class="responsiveMoodNone ">
                 </button>
                 <div class="align-items-start divbtnShow responsiveMoodNone" id="listContent">
                   <ul class="navbar-nav flex-column listStyle ulbtnShow responsiveMoodNone" id="listNavbar">
@@ -141,15 +139,8 @@
                     <label for="mensaje">Dejanos tu mensaje</label>
                     <textarea class="form-control" id="mensaje" maxlength="300" rows="4" cols="40"></textarea>
                 </div>
-                    <div class="form-group">
-                        <label for="conocer">¿Cómo nos conociste?</label>
-                        <select class="form-control" id="conocer">
-                            <option disabled selected>Ver opciones</option>
-                            <option value="">Red Social</option>
-                            <option value="">Recomendación de un amigo</option>
-                            <option value="">Buscamos en Internet</option>
-                            <option value="">Otro</option>
-                        </select>
+                    <div class="form-group mt-4 letterSpacing">
+                        <span><b>¡En breve nos contactaremos con vos!</b></span>
                     </div>
             </div>
         </div>
