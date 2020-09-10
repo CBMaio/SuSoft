@@ -1,31 +1,38 @@
-const title = document.querySelector('h1')
-const subtitle = document.querySelector('#subtitle')
-
-
 const writing = str => {
-    let arrFromString = str.split('');
+    const title = document.querySelector('h1')
+    let length = str.length;
     let i = 0;
     let printStr = setInterval(function(){
-        title.innerText += arrFromString[i];
+       title.innerHTML = title.innerHTML.substr(0,title.innerHTML.length-1) + str.charAt(i) + " ";
         i++;
-        
-        if(i === arrFromString.length){
+        if(i === str.length){
             clearInterval(printStr);
-            writingSecond('Software Development');
+            writingSecond('Software Development')
         }
-    }, 400);  
+    }, 100);  
 };
 
-writing('uSoft ');
+writing('SuSoft');
 
 const writingSecond = str => {
-    
-    let arrFromString = str.split('');
+    const subtitle = document.querySelector('#subtitle')
+    let length = str.length;
     let i = 0;
     let printStr = setInterval(function(){
-        subtitle.innerText += arrFromString[i];
-        i++;
-        if(i === arrFromString.length){
+       subtitle.innerHTML = subtitle.innerHTML.substr(0,subtitle.innerHTML.length-1) + str.charAt(i) + " ";
+        i++;const writingSecond = str => {
+            const subtitle = document.querySelector('#subtitle')
+            let length = str.length;
+            let i = 0;
+            let printStr = setInterval(function(){
+               subtitle.innerHTML = subtitle.innerHTML.substr(0,subtitle.innerHTML.length-1) + str.charAt(i) + " ";
+                i++;
+                if(i === str.length){
+                    clearInterval(printStr);
+                }
+            }, 100);  
+        };
+        if(i === str.length){
             clearInterval(printStr);
         }
     }, 100);  
