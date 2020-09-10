@@ -25,12 +25,12 @@
   right: 0;
   background: black;
   border-left: 3px solid #bec6dc;
-  opacity: 0.7;
+
   transition: all 0.2s ease-in;
 }
 
 .navbar:hover {
-  border-left: 3px solid #6b7dab;
+  border-left: 3px solid white;
 }
 
 .listStyle {
@@ -43,12 +43,14 @@
 .titlePage h1 {
   font-size: 7rem;
   font-family: 'Roboto Mono', monospace;
+  text-shadow: 2px 2px 2px black;
 }
 
 .titlePage h2 {
   font-size: 3rem;
   font-family: 'Roboto Mono', monospace;
   font-style: italic;
+  text-shadow: 2px 2px 2px black;
 }
 
 .principalPage,
@@ -59,6 +61,18 @@
 .about_us,
 #nuestros-trabajos {
   height: 100vh;
+}
+
+#nuestros-trabajos {
+
+}
+
+.textStyle{ 
+    font-weight: bold;
+    letter-spacing: .5px;
+    text-shadow: 1px 1px 1px white;
+    text-transform: uppercase;
+    margin-top: 60px;
 }
 
 .btn-style-border {
@@ -89,46 +103,12 @@ textarea {
 }
 
 .principalPage {
-  background-color: #042056;
+  background-image: url('../IMG/pexels-markus-spiske-1089438.jpg');
+/*   background: red; */
+  filter: opacity(.9);
+  background-position: center;
+  background-size: cover;
 }
-
-.principalPage:hover{
-    animation-name: backgroundColor;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes backgroundColor {
-    0% {
-        background-color: #042056;
-    }
-
-    35% {
-        background-color: #031b49;
-    }
-
-    45% {
-        background-color: #021435;
-    }
-
-    50%{
-      background-color: #020d22;
-    }
-
-    55% {
-        background-color: #021435;
-    }
-
-    65% {
-        background-color: #031b49;
-    }
-    
-    100% {
-        background-color: #042056;
-    }
-}
-
-
 
 .colorText {
   background-color: white;
@@ -168,19 +148,21 @@ textarea {
 }
 
 .stylesImg {
-    opacity: .8;
     width: auto;
     height: 200px;
     transition: all .2s linear;
     max-width: 100%;
+    transform: scale(1.05);
 }
 html {
   scroll-behavior: smooth;
 }
-.stylesImg:hover {
-    opacity: 1;
-    transform: scale(1.05);
+
+.icono {
+  width: 20px;
 }
+
+
 
 .top-btn {
     background: #f0e3b9;
@@ -206,13 +188,20 @@ html {
 }
 
 .carouselStyles {
-  width: 100%;
+  width: 70%;
+  border-top: 1px solid #827863;
+  border-bottom: 1px solid #827863;
+  box-shadow: 0 0 5px rgba(0,0,0, .5);
+  background: white;
+  margin: auto;
   height: 60vh;
-  border-top: 2px solid #042056;
-  border-bottom: 2px solid #042056;;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.indicatorItemCarousel{
+  background-color: #827863!important;
 }
 
 .carouselImgContent {
@@ -229,6 +218,7 @@ html {
 
 .control{
   width: 30px;
+  background-color: #827863;
 }
 
 .color-subtitle {
@@ -300,9 +290,16 @@ html {
     margin-top: 20px;
   }
   
-  .about_us,
-  #nuestros-trabajos {
+  .about_us {
     height: auto;
+  }
+
+  #nuestros-trabajos {
+    height: 95vh;
+  }
+
+  .textStyle {
+    margin-top: 15px;
   }
   
   .personTitle {
@@ -339,6 +336,11 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .carouselStyles{
+    margin: 0;
+    width: 100%;
   }
   
   .ajusteWidthResponsive, .carouselImgContent {

@@ -36,7 +36,7 @@
             <section id="titleSection"class="col-md-9 justify-content-sm-center align-items-center mt-5 mt-sm-0"> <!--sectionbtnShow-->
                 <header class="titlePage p-md-5 pt-sm-2 pt-5"> 
                     <h1 class="m-md-5 m-3">S</h1>
-                    <h2 class="m-5">Software Development</h2>
+                    <h2 id="subtitle" class="m-5"><!-- Software Development< --></h2>
                 </header>
             </section>
         </div>
@@ -80,9 +80,9 @@
         <div class="row container mr-auto ml-auto mt-3">
             <div id="carouselExampleIndicators" class="carousel slide carouselStyles" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active indicatorItemCarousel"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1" class="indicatorItemCarousel"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2" class="indicatorItemCarousel"></li>
                 </ol>
                 <div class="carousel-inner carouselImgContent">
                   <div class="carousel-item active">
@@ -95,19 +95,18 @@
                     <img src="IMG/mcDonalds.png" class="d-block m-auto ajusteWidthResponsive" alt="LOGO MC">
                   </div>
                 </div>
-                <a class="carousel-control-prev btn-dark control" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <a class="carousel-control-prev control" href="#carouselExampleIndicators" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next btn-dark control" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a class="carousel-control-next control" href="#carouselExampleIndicators" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
                 </a>
               </div>
         </div>
         <section class="description col-12 mt-md-4 p-0">
-            <h2 class="text-right pr-md-5 mr-md-5 color-subtitle">¡Gracias!</h2>
-
+            <h2 class="text-right pr-md-5 mr-md-5 color-subtitle textStyle">¡Gracias!</h2>
         </section> 
     </div>
     
@@ -139,7 +138,7 @@
                     <label for="mensaje">Dejanos tu mensaje</label>
                     <textarea class="form-control" id="mensaje" maxlength="300" rows="4" cols="40"></textarea>
                 </div>
-                    <div class="form-group mt-4 letterSpacing">
+                    <div class="form-group mt-4 letterSpacing text-center">
                         <span><b>¡En breve nos contactaremos con vos!</b></span>
                     </div>
             </div>
@@ -159,9 +158,15 @@
             </div>
             <div class="col-md-2 col-sm-12">
                 <ul class="text-white list-inline d-flex justify-content-around">
-                    <li><i class="fab fa-instagram fa-1.8x"></i></li>
-                    <li><i class="far fa-envelope fa-1.8x"></i></li>
-                    <li><i class="fab fa-linkedin-in fa-1.8x"></i></li>
+                    <li>
+                        <img src="IMG/instagram-sketched.png" alt="Icono Instagram" class="icono">
+                    </li>
+                    <li>
+                        <img src="IMG/linkedin.png" alt="Icono Linkedin" class="icono">
+                    </li>
+                    <li>
+                        <img src="IMG/email.png" alt="Icono Mail" class="icono">
+                    </li>
                 </ul>
             </div>
             </div>
@@ -180,6 +185,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
-<script src="JS/app.js"></script>
+    <script src="JS/app.js"></script>
 </body>
 </html>
