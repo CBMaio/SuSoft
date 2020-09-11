@@ -49,8 +49,11 @@
 .titlePage h2 {
   font-size: 3rem;
   font-family: 'Roboto Mono', monospace;
-  font-style: italic;
-  text-shadow: 2px 2px 2px black;
+  font-style: italic;/* 
+  text-shadow: 2px 2px 2px black; */
+  background: -webkit-linear-gradient(white, #8e9ca8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .principalPage,
@@ -61,10 +64,6 @@
 .about_us,
 #nuestros-trabajos {
   height: 100vh;
-}
-
-#nuestros-trabajos {
-
 }
 
 .textStyle{ 
@@ -139,6 +138,13 @@ textarea {
     border-top: 1px solid #563b04;
 }
 
+.formStyle{
+  border: 1px dashed;
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+}
+
 .footerBg {
   background: #00002d;
 }
@@ -199,6 +205,7 @@ html {
   align-items: center;
   justify-content: center;
 }
+
 
 .indicatorItemCarousel{
   background-color: #827863!important;
@@ -343,6 +350,13 @@ html {
     width: 100%;
   }
   
+  .formStyle{
+    border: 1px dashed;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+  }d
+
   .ajusteWidthResponsive, .carouselImgContent {
     width: 200px;
     height: auto;
