@@ -207,6 +207,7 @@ html {
 }
 
 
+
 .indicatorItemCarousel{
   background-color: #827863!important;
 }
@@ -350,10 +351,15 @@ html {
     width: 100%;
   }
   
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+  }
+
   .formStyle{
     border: 1px dashed;
-    width: 60%;
-    margin: auto;
+    margin: 0;
+    width: 100%;
     padding: 20px;
   }d
 
