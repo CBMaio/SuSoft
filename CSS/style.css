@@ -25,7 +25,7 @@
   right: 0;
   background: black;
   border-left: 3px solid #bec6dc;
-
+  z-index: 1;
   transition: all 0.2s ease-in;
 }
 
@@ -102,13 +102,13 @@ textarea {
   resize: none;
 }
 
-.principalPage {
-  background-image: url('../IMG/pexels-markus-spiske-1089438.jpg');
-/*   background: red; */
+/* .principalPage {
+    background: #042056; */
+/*   background-image: url('../IMG/img-bg.jpeg');
   filter: opacity(.9);
   background-position: center;
-  background-size: cover;
-}
+  background-size: cover; 
+}*/
 
 .colorText {
   background-color: white;
