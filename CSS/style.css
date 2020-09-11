@@ -220,7 +220,7 @@ html {
 }
 
 .ajusteWidthResponsive{
-  width: 300px;
+  width: 200px;
   height: auto;
 }
 
@@ -349,11 +349,6 @@ html {
   .carouselStyles{
     margin: 0;
     width: 100%;
-  }
-  
-  .carousel-item {
-    display: flex;
-    justify-content: center;
   }
 
   .formStyle{
